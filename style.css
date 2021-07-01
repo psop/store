@@ -100,11 +100,14 @@ body {
 
 .sidemenu {
     width: 34%;
-    text-align: center;
+    /* text-align: center; */
     padding-right: 24px;
 }
 
 .sidemenu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 65px;
     border: 1px solid var(--secondary);
