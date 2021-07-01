@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <h1><a href="#"><img src="img/logo-all-dark.svg" alt="logo" class="logo"></a></h1>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">甜點</a></li>
+                <li><a href="login.html">登入</a></li>
+                <li><a href="#"><button class="btn"><i class="fas fa-shopping-cart"></i></button></a></li>
+            </ul>
+        </div>
+    </nav> 
+    
+    <div class="small-container">
+        <div class="login-container">
+            <form class="login">
+                <h3>會員登入</h3>
+                <div class="info">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="input" id="user" placeholder="電子信箱/手機號碼" required>
+                    <label for="user"></label>
+                </div>
+                <div class="info">
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="input" id="password" placeholder="請輸入使用者密碼" required>
+                    <label for="password"></label>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" name="remember" id="remember" class="remember">
+                    <label for="remmeber">記住我</label>
+                </div>
+            </form>
+            <button class="login-btn">登入帳號</button>
+        </div>
+        
+
+        <div class="fastLogin">
+            <h3>——連結社群帳號——</h3>
+            <div class="sns-login">
+                <img src="img/fb.svg" alt="facebook">
+            </div>
+            <div class="sns-login">
+                <img src="img/google.svg" alt="google">
+            </div>
+            <div class="sns-login">
+                <img src="img/yahoo.svg" alt="yahoo">
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <div class="container">
+            <div class="cta">
+                <img src="img/logo-light.svg" alt="logo" class="dark-bg-logo">
+                <p class="ml-1">訂閱你我的甜蜜郵件</p>   
+            </div>
+                
+            <form class="form">
+                <i class="fas fa-envelope"></i>
+                <input type="text" class="input">
+                <button class="subscribe-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <img src="img/lg-dark.svg" alt="logo">
+                <ul>
+                    <li><a href="tel:+0712345678">07-1234-5678</a></li>
+                    <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
+                    <li>600 高雄市新興區幸福路 520 號</li>
+                    <li class="sns">
+                        <a href="#"><img src="img/line.png" alt="line"></a>
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <p class=vertical>今天是個 <br>
+                吃甜點的好日子。</p>
+                <p>© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
