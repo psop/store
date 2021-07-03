@@ -3,6 +3,7 @@ global settings
 header(nav)
 banner
 bakcground
+quote
 cake list
 pagination
 login
@@ -209,7 +210,7 @@ body {
     top: -25px;
     left: 0;
 }
-
+/* quote */
 .container .quote {
     display: flex;
     justify-content: center;
@@ -273,11 +274,23 @@ body {
 .productPhoto {
     width: 300px;
     height: 315px;
-    background-image: url(img/p-1.png);
     position: relative;
 }
 
-.recommendation {
+.productPhoto .photo {
+    width: 300px;
+    height: 315px;
+    /* position: relative; */
+}
+
+/* .productPhoto {
+    width: 300px;
+    height: 315px;
+    background-image: url(img/p-1.png);
+    position: relative;
+} */
+
+.productPhoto .recommendation {
     background-color: var(--primary);
     color: var(--secondary);
     width: 36px;
@@ -304,6 +317,7 @@ body {
     font-size: 16px;
     background-color: transparent;
     color: var(--primary);
+    cursor: pointer;
 }
 
 .productDetail {
@@ -338,10 +352,11 @@ body {
     outline: none;
     border: none;
     font-size: 24px;
-    font-weight: 600px;
+    font-weight: 600;
     color: var(--green);
     text-align: center;
     padding: 16px 0;
+    cursor: pointer;
 }
 
 .productList3rows {
