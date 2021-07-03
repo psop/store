@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>我的購物車</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav mb-3">
         <div class="container">
             <h1><a href="#"><img src="img/logo-all-dark.svg" alt="logo" class="logo"></a></h1>
             <ul>
@@ -21,43 +21,69 @@
             </ul>
         </div>
     </nav> 
-    
-    <div class="small-container">
-        <div class="login-container">
-            <form class="login">
-                <h3>會員登入</h3>
-                <div class="info">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="input" id="user" placeholder="電子信箱/手機號碼" required>
-                    <label for="user"></label>
-                </div>
-                <div class="info">
-                    <i class="fas fa-key"></i>
-                    <input type="password" class="input" id="password" placeholder="請輸入使用者密碼" required>
-                    <label for="password"></label>
-                </div>
-                <div class="remember-me">
-                    <input type="checkbox" name="remember" id="remember" class="remember">
-                    <label for="remmeber">記住我</label>
-                </div>
-            </form>
-            <button class="login-btn">登入帳號</button>
-        </div>
-        
 
-        <div class="fastLogin">
-            <h3>——連結社群帳號——</h3>
-            <div class="sns-login">
-                <img src="img/fb.svg" alt="facebook">
+    <section class="container shoppingList mb-3">
+        <ul><p class="title">我的購物車</p>
+            <li>
+                <img src="img/p-1.png" alt="cake" class="itemPhoto">
+                <div class="productDetail">
+                    <p>焦糖馬卡龍</p>
+                    <p class="checkoutPrice">NT $450</p>
+                </div>
+                <div class="number">
+                    <button class="times-btn" id="decrease">-</button>
+                    <p>2</p>
+                    <button class="times-btn" id="increase">+</button>
+                </div>
+                <i class="fas fa-trash-alt"></i>
+            </li>
+            <li>
+                <img src="img/p-2.png" alt="cake" class="itemPhoto">
+                <div class="productDetail">
+                    <p>焦糖馬卡龍</p>
+                    <p class="checkoutPrice">NT $450</p>
+                </div>
+                <div class="number">
+                    <button class="times-btn" id="decrease">-</button>
+                    <p>2</p>
+                    <button class="times-btn" id="increase">+</button>
+                </div>
+                <i class="fas fa-trash-alt"></i>
+            </li>
+            <li>
+                <img src="img/p-3.png" alt="cake" class="itemPhoto">
+                <div class="productDetail">
+                    <p>焦糖馬卡龍</p>
+                    <p class="checkoutPrice">NT $450</p>
+                </div>
+                <div class="number">
+                    <button class="times-btn" id="decrease">-</button>
+                    <p>2</p>
+                    <button class="times-btn" id="increase">+</button>
+                </div>
+                <i class="fas fa-trash-alt"></i>
+            </li>
+        </ul>
+
+        <div class="checkout-container">
+            <div class="summaryList">
+                <p class="lists">訂單摘要</p>
+                <div class="subtotal mt-1">
+                    <p>小計</p>
+                    <p>NT $2,700</p>
+                </div>
+                <div class="subtotal">
+                    <p>運費</p>
+                    <p>NT$ 300</p>
+                </div>
+                <div class="total">
+                    <p>總計</p>
+                    <p>NT$ 3,000</p>
+                </div>
             </div>
-            <div class="sns-login">
-                <img src="img/google.svg" alt="google">
-            </div>
-            <div class="sns-login">
-                <img src="img/yahoo.svg" alt="yahoo">
-            </div>
+            <button class=checkout-btn><a href="#">結帳</a></button>
         </div>
-    </div>
+    </section>
 
     <div class="highlight">
         <div class="container">

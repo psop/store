@@ -8,6 +8,7 @@ cake list
 pagination
 login
 fast login
+shopping-cart
 subscription
 footer
 extra margin & padding */
@@ -85,6 +86,7 @@ body {
     border: none;
     font-size: 20px;
     color: var(--primary);
+    cursor: pointer;
 } 
 
 /* banner */
@@ -231,7 +233,6 @@ body {
 
 .sidemenu {
     width: 34%;
-    /* text-align: center; */
     padding-right: 24px;
 }
 
@@ -280,15 +281,7 @@ body {
 .productPhoto .photo {
     width: 300px;
     height: 315px;
-    /* position: relative; */
 }
-
-/* .productPhoto {
-    width: 300px;
-    height: 315px;
-    background-image: url(img/p-1.png);
-    position: relative;
-} */
 
 .productPhoto .recommendation {
     background-color: var(--primary);
@@ -493,6 +486,121 @@ body {
     height: 30px;
 }
 
+/* shopping-cart */
+.shoppingList {
+    display: flex;
+}
+
+.shoppingList ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.shoppingList .title {
+    background-color: var(--secondary);
+    padding: 16px 120px;
+    margin-bottom: 13px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.shoppingList ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.itemPhoto {
+    width: 110px;
+    height: 110px;
+}
+
+.shoppingList ul li .productDetail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 39px;
+}
+
+.checkoutPrice {
+    font-size: 16px;
+}
+
+.number {
+    display: flex;
+    font-size: 16px;
+}
+
+.times-btn {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.number p,
+.times-btn {
+    padding: 13px 19px;
+    border: 1px solid var(--secondary);
+}
+
+.fa-trash-alt {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 39px;
+}
+
+.checkout-container {
+    width: 34%;
+}
+
+.summaryList {
+    height: 193px;
+    background-color: var(--primary);
+    padding: 0 30px;
+    color: var(--secondary);
+}
+
+.lists {
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.subtotal,
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal {
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.total {
+    padding: 6px 0 16px 0;
+}
+
+.checkout-btn {
+    background-color: var(--third);
+    width: 100%;
+    border: none;
+    padding: 16px 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.checkout-btn a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
 /* subscription */
 .highlight {
     background-color: var(--primary);
@@ -611,6 +719,10 @@ body {
 }
 
 /* extra margin & padding */
+.mt-1 {
+    margin-top: 10px;
+}
+
 .mb-3 {
     margin-bottom: 60px;
 }
