@@ -55,6 +55,11 @@ body {
     align-items: center;
 }
 
+.sm-container {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
 /* header(nav) */
 .logo {
     width: 220px;
@@ -601,6 +606,167 @@ body {
     text-decoration: none;
 }
 
+/* transportation */
+.rows2 {
+    display: flex;
+}
+
+.transportationInfo {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.transportationInfo h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.transportationInfo form {
+    padding: 30px 40px;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.form-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input {
+    width: 100%;
+    height: 56px;
+    background-color: var(--secondary);
+    border: none;
+    padding: 17px 20px;
+    margin-top: 8px;
+}
+
+.form-control input::placeholder {
+    color: var(--fourth);
+    font-size: 16px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.next-btn {
+    background-color: var(--third);
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    padding: 19px 0;
+    cursor: pointer;
+}
+
+.next-btn a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.shopping-lists {
+    width: 40%;
+} 
+
+.shopping-summary {
+    border: 1px solid var(--secondary);
+}
+
+.shopping-lists h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--fourth);
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 16px 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.shopping-subtotal,
+.shopping-total {
+    display: flex;
+    /* justify-content: space-between; 無法左右靠左 */
+}
+
+.shopping-subtotal {
+    font-size: 16px;
+    padding: 16px 20px 0 20px;
+}
+
+.shopping-total {
+    padding: 16px 20px 16px 20px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.shopping-list {
+    border: 1px solid var(--secondary);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--fourth);
+}
+
+.shopping-list img {
+    width: 120px;
+    height: 80px;
+    margin: 0 20px;
+}
+
+.ItemDetail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.transportItem {
+    margin-right: 8px;
+}
+
+.transportPrice {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* circle */
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 150px;
+}
+  
+.circle {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--secondary);
+    transition: 0.4s ease;
+}
+  
+.circle.active {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
 /* subscription */
 .highlight {
     background-color: var(--primary);
@@ -721,6 +887,14 @@ body {
 /* extra margin & padding */
 .mt-1 {
     margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mb-1 {
+    margin-bottom: 20px;
 }
 
 .mb-3 {

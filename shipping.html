@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>運送</title>
+</head>
+<body>
+    <nav class="nav mb-3">
+        <div class="container">
+            <h1><a href="#"><img src="img/logo-all-dark.svg" alt="logo" class="logo"></a></h1>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="store.html">甜點</a></li>
+                <li><a href="login.html">登入</a></li>
+                <li><a href="shopping-cart.html"><button class="btn"><i class="fas fa-shopping-cart"></i></button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sm-container rows2 mb-3">
+        <div class="transportationInfo">
+            <form>
+                <div class="circle-container">
+                    <h2>運送</h2>
+                    <div class="progress-container">
+                        <div class="circle active">1</div>
+                        <div class="circle">2</div>
+                        <div class="circle">3</div>
+                    </div>
+                </div>
+                <div class="form-controls mt-3">
+                    <div class="form-control">
+                        <label>姓氏</label>
+                        <input type="text" placeholder="王" required>
+                    </div>
+                    <div class="form-control">
+                        <label>名字</label>
+                        <input type="text" placeholder="小明" required>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label>電話</label>
+                    <input type="text" placeholder="0912-345-678" required>
+                </div>
+                <div class="form-controls">
+                    <div class="form-control">
+                        <label>地址</label>
+                        <input type="text" placeholder="高雄市" required>
+                    </div>
+                    <div class="form-control">
+                        <label class="invisible">地址</label>
+                        <input type="text" placeholder="新興區" required>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label></label>
+                    <input type="text" placeholder="幸福路 520 號" required>
+                </div>
+            </form>
+            <button class="next-btn"><a href="pay.html">下一步</a></button>
+        </div>
+
+        <div class="shopping-lists">
+            <div class="shopping-summary mb-1">
+                <h2>訂單摘要</h2>
+                <div class="shopping-subtotal">
+                    <p>小計</p>
+                    <p>NT$ 2,700</p>
+                </div>
+                <div class="shopping-subtotal">
+                    <p>運費</p>
+                    <p>NT$ 300</p>
+                </div>
+                <div class="shopping-total">
+                    <p>總計</p>
+                    <p>NT$ 3,000</p>
+                </div>
+            </div>
+            <div class="shopping-list">
+                <h2>購物清單</h2>
+                <div class="list">
+                    <img src="img/p-1.png" alt="cake">
+                    <div class="ItemDetail">
+                        <p class="transportItem">焦糖馬卡龍</p>
+                        <span>(2)</span>
+                        <p class="transportPrice">NT$ 900</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <img src="img/p-2.png" alt="cake">
+                    <div class="ItemDetail">
+                        <p class="transportItem">焦糖馬卡龍</p>
+                        <span>(2)</span>
+                        <p class="transportPrice">NT$ 900</p>
+                    </div>
+                </div>
+                <div class="list mb-1">
+                    <img src="img/p-3.png" alt="cake">
+                    <div class="ItemDetail">
+                        <p class="transportItem">焦糖馬卡龍</p>
+                        <span>(2)</span>
+                        <p class="transportPrice">NT$ 900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <div class="container">
+            <div class="cta">
+                <img src="img/logo-light.svg" alt="logo" class="dark-bg-logo">
+                <p class="ml-1">訂閱你我的甜蜜郵件</p>   
+            </div>
+                
+            <form class="form">
+                <i class="fas fa-envelope"></i>
+                <input type="text" class="input">
+                <button class="subscribe-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <img src="img/lg-dark.svg" alt="logo">
+                <ul>
+                    <li><a href="tel:+0712345678">07-1234-5678</a></li>
+                    <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
+                    <li>600 高雄市新興區幸福路 520 號</li>
+                    <li class="sns">
+                        <a href="#"><img src="img/line.png" alt="line"></a>
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <img src="img/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子">
+                <p>© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
