@@ -9,6 +9,9 @@ pagination
 login
 fast login
 shopping-cart
+transportation
+circle
+pay
 subscription
 footer
 extra margin & padding */
@@ -765,6 +768,36 @@ body {
 .circle.active {
     background-color: var(--secondary);
     color: var(--primary);
+}
+
+.pay {
+    background-image: url(img/付款成功-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 940px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pay img {
+    width: 189.36px;
+    height: 45.46px;
+}
+
+.again-btn {
+    padding: 16px 100px;
+    background-color: var(--third);
+    border: none;
+}
+
+.again-btn a {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
 }
 
 /* subscription */
